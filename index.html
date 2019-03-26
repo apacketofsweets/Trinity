@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+	<head>
+		<script type="text/javascript">
+			function startTime()
+			{
+				var today=new Date();
+				var h=today.getHours();
+				var m=today.getMinutes();
+				var s=today.getSeconds();
+				m=checkTime(m);
+				s=checkTime(s);
+				document.getElementById('txt').innerHTML=h%12+":"+m;
+				t=setTimeout('startTime()',500);
+			}
+			function checkTime(i)
+			{
+				if (i<10)
+				{
+					i="0" + i;
+				}
+				return i;
+			}
+		</script>
+		<title>apacketofsweets</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css.css" />
+	</head>
+	<body onload="startTime()">
+  <div id="backgroundc">
+		<div id="container">
+			<div id="header">
+				<h3 style="display: inline;"><span class="red"> ~ [Search]:</span></h3>
+				<form method="get" action="https://start.duckduckgo.com">
+					<input type="text" autofocus="autofocus" name="q" \>
+				</form>
+			</div>
+
+                        <div id="header">
+                                <h3 style="display: inline"><span class="red"></span><span class="red">~ [Time]: <class="gray"></span> <span class="gray" id="txt"></span>
+                        </div>
+
+			<div id="links">
+
+				<div class="linksbox">
+					<h3><span class="red">~ [Services]</span><span class="blue">:</span></h3>
+			        <a class="cyan" target="blank" href="http://https://email.anhur.xyz/">Email</a>
+			        <a class="cyan"  target="blank" href="http://anhur.xyz:8096/">Media</a>
+				<a class="cyan"  target="blank" href="http://anhur.xyz:9091">Transmission</a>
+				</div>
+
+                                <div class="linksbox">
+                                        <h3><span class="red">~ [Nextcloud]</span><span class="blue">:</span></h3>
+                                <a class="cyan"  target="blank" href="https://anhur.xyz/index.php">Files</a>
+                                <a class="cyan"  target="blank" https://anhur.xyz/index.php/apps/bookmarks/">Bookmarks</a>
+                                <a class="cyan"  target="blank" href="https://anhur.xyz/index.php/apps/calendar/">Calendar</a>
+                                <a class="cyan" target="blank" href="https://anhur.xyz/index.php/apps/tasks/">Tasks</a>
+                                <a class="cyan" target="blank" href="https://anhur.xyz/index.php/apps/notes/">Notes</a>
+                                </div>
+
+				<div class="linksbox">
+					<h3><span class="red">~ [Cloud]</span><span class="blue">:</span></h3>
+				<a class="cyan" target="blank" href="https://app.dashlane.com/login">Dashlane</a>
+				<a class="cyan" target="blank" href="https://open.spotify.com/browse/featured">Spotify</a>			        
+				<a class="cyan" target="blank" href="https://www.youtube.com">YouTube</a>
+			        <a class="cyan" target="blank" href="https://www.reddit.com">Reddit</a>
+			      	</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
